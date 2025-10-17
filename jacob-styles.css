@@ -1,0 +1,143 @@
+/*
+Jacob Hanson CSS
+*/
+/*
+add a google font
+*/
+body section h1, body section h2 {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+  font-size: 2em;
+}
+
+/* page background color */
+body {
+    background-color: green;
+    color: white;
+}
+
+/*
+default color for nav
+*/
+body > header > nav > ul > li > a {
+    color: black;
+}
+
+/*
+nav links visited
+*/
+body > header > nav > ul > li > a:visited {
+	color: darkgreen;
+}
+
+/*
+nav links hover
+*/
+body > header > nav > ul > li > a:hover, body > header > nav > ul > li > a:active {
+	color: black;
+	background-color: yellowgreen;
+}
+
+/*
+smaller footer
+*/
+footer {
+	background-color: #80ff80;
+	color: black;
+	font-size: 85%;
+}
+
+/*
+nav background color and height
+*/
+body > header > nav > ul {
+	background-color: #afff80;
+	height: 30px;
+}
+
+/*
+nav link color
+*/
+body > header > nav > ul > li > a {
+	color: black;
+}
+
+/*
+support list items
+*/
+body section:first-of-type ul li strong {
+	color: yellowgreen;
+}
+
+/*
+link colors in paragraphs
+*/
+body section:nth-of-type(2) a {
+	color: #85c041;
+}
+
+/*
+links in paragraphs hover
+*/
+body section:nth-of-type(2) a:hover, body section:nth-of-type(2) a:active {
+    background-color: black;
+}
+
+/*
+home page headers
+*/
+body section:nth-of-type(2)  h2 {
+	font-size: 0.9em;
+	color: #41c056;
+}
+
+/*
+faq header 1
+*/
+body section header h1 {
+	font-size: 1.4em;
+    color: #afff80;
+}
+
+/*
+add padding to headings 2
+*/
+body section h2 {
+  	font-size: 1.1em;
+    color: #afff80;
+    padding-top: 1em;
+}
+
+/*
+faq link colors 
+*/
+section ol li a {
+    color: white;
+}
+
+/* 
+faq link hover 
+*/
+section ol li a:hover, section ol li a:active {
+    background-color: black;
+    color: white;
+}
+
+/* 
+faq return colors 
+*/
+p a {
+    color: white;
+}
+
+/* 
+faq return hover 
+*/
+p a:hover, p a:active {
+    background-color: black;
+    color: white;
+}
