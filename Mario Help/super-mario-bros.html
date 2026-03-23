@@ -4,13 +4,12 @@
     <title>Super Mario Bros Movie</title>
 </head>
 <body style="background-image: linear-gradient(45deg, red, orange);">
-    <header>
-        <nav>
-            <a style="padding: 1em;" href="the-bad-guys.html">The Bad Guys</a> |
-            <a style="padding: 1em;" href="super-mario-bros.html">Super Mario Bros Movie</a> |
-            <a style="padding: 1em;" href="sonic-3.html">Sonic the Hedgehog 3</a>
-        </nav>
-    </header>
+    <header id="main-header"></header>
+    <script>
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('main-header').innerHTML = data);
+    </script>
 
     <h1 style="text-shadow: 0 0 6px yellow;">The Super Mario Bros Movie</h1>
     <img style="float: left; margin-right: 2em;" src="super-mario-bros-movie-poster.jpg" alt="Super Mario Bros Movie Poster" width="300" />

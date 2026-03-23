@@ -1,0 +1,36 @@
+# Project Overview
+
+This repository contains introductory static web development projects and assignments using HTML5 and CSS3. The workspace is divided into two primary directories, each representing a distinct project or collection of work:
+
+1.  **Mario Help**: A personal sub-project containing sample movie pages (e.g., Super Mario Bros, Sonic 3) created to help teach Jacob's friend, Mario, basic HTML features and how to create and edit web pages on his own.
+    *   **Movies List**: The `movies-list.md` file serves as a reference of potential future movies to create pages for.
+2.  **SP01_Hanson**: A complete, multi-page static website for a charity running event called "Diane's Run". It demonstrates the use of semantic HTML, responsive CSS layouts using media queries, and separation of styling concerns across multiple CSS files.
+
+## Building and Running
+
+Because this is a static HTML/CSS project, there are no build scripts or package managers required.
+
+To view the websites:
+1.  **Directly in Browser**: You can open any `.html` file (e.g., `SP01_Hanson/dr_index.html`) directly in your web browser.
+2.  **Local Web Server**: For a better development experience, you can serve the directory using a simple local HTTP server. For example:
+    *   Python: `python3 -m http.server`
+    *   Node.js: `npx serve`
+    *   VS Code: Use the "Live Server" extension.
+
+## Development Conventions
+
+Based on the existing codebase (specifically the "Diane's Run" project), adhere to the following conventions:
+
+*   **Semantic HTML**: Use HTML5 structural elements like `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, and `<footer>` instead of generic `<div>` tags where appropriate.
+*   **CSS Organization**: Styles are modularized. For example, `dr_base.css` contains default resets and typography, `dr_layout.css` handles structural layout and media queries, and `jacob-styles.css` handles specific theme styling.
+*   **Responsive Design**: Use a mobile-first approach. The CSS uses base styles for mobile devices (up to 480px) and applies `min-width` media queries for tablet (481px+) and desktop (769px+) layouts.
+
+## Directory Structure
+
+*   `Mario Help/`: Assorted HTML files and assets. Key files include `movies-list.md` and several movie-specific `.html` files.
+*   `SP01_Hanson/`: The "Diane's Run" project directory.
+    *   `dr_index.html`: The home page.
+    *   `dr_info.html`: Race information page.
+    *   `dr_faq.html`: Frequently asked questions page.
+    *   `*.css`: Various stylesheets for layout and design.
+    *   `images/`: Image assets for the site.
