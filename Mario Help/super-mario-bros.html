@@ -3,10 +3,9 @@
 <head>
     <title>Super Mario Bros Movie</title>
 </head>
-<body style="background-image: linear-gradient(45deg, red, orange);">
-    <header>
-        <iframe src="nav.html" width="100%" style="border:none; height: 4em;"></iframe>
-    </header>
+<body style="background-image: linear-gradient(45deg, red, orange); display: flex; margin: 0; min-height: 100vh;">
+    <iframe src="nav.html" style="border:none; width: 250px; flex-shrink: 0; background: rgba(255, 255, 255, 0.8);"></iframe>
+    <main style="flex-grow: 1; padding: 2em; box-sizing: border-box;">
 
     <h1 style="text-shadow: 0 0 6px yellow;">The Super Mario Bros Movie</h1>
     <img style="float: left; margin-right: 2em;" src="super-mario-bros-movie-poster.jpg" alt="Super Mario Bros Movie Poster" width="300" />
@@ -29,5 +28,6 @@
     <p>
         <img style="border-style: dashed; border-width: 1em; border-color: orange;" src="mario-mushroom.png" width="100" />
     </p>
+    </main>
 </body>
 </html>
